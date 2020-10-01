@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Internet Clipboard</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<style>
+		.container{
+			background-color: #1E1F2E;
+			padding-top:50px;
+			padding-bottom: 70px;
+			text-align: center;
+			margin-top: 25vh;
+			margin-bottom: 20vh;
+   			padding-right: 25px;
+    		padding-left: 25px;
+    		margin-right: auto;
+    		margin-left: auto;
+		}
+			
+
+
+		.btn{
+			display:block;
+			margin: auto;
+			margin-top:10px;
+			background-color: #e0e0eb;
+		}
+
+		input{
+			display: block;
+			width:40em;
+			margin:auto;
+		}
+
+		h2{
+			color:white;
+			padding-bottom:40px;
+		}
+
+		body{
+			background-color: black;
+		}
+	</style>
+
+	<body>
+		<div class="container">
+			<h2>Enter your ID</h2>
+			<form class="ui form" action="/" method="POST">
+				<input type="text" name="name_of_user" required pattern="[A-z]+[0-9]*" placeholder="letters  |  numbers  |  alphanumeric  |  no spaces">
+				<button type="submit" class="btn btn-light">See your tasks</button>
+			</form>
+		</div>
+	</body>
+</html>
